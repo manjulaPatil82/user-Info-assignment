@@ -1,0 +1,17 @@
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-primary">
+    <img class="logo" src="../assets/sapLogo.png">
+    <div class="navbar-nav mr-auto pr-3">
+      <li class="nav-item active pr-3 border-right" [routerLinkActive]="['active']">
+        <a routerLink="userslist" class="nav-link">Users list</a>
+      </li>
+      <li class="nav-item pr-3" [routerLinkActive]="['active']">
+        <a routerLink="createuser" class="nav-link">Create user</a>
+      </li>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <router-outlet></router-outlet>
+  </div>
+</div>
